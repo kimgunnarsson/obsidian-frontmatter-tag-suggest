@@ -89,7 +89,7 @@ class TagSuggest extends EditorSuggest<string> {
 			if (this.inline) {
 				suggestion = `${suggestion}`;
 			} else {
-				suggestion = `${suggestion}\n -`;
+				suggestion = `${suggestion}\n\t-`;
 			}
 			(this.context.editor as Editor).replaceRange(
 				`${suggestion} `,
